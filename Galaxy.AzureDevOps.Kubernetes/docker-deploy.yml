@@ -30,6 +30,8 @@ spec:
             labels:
                 app: app-galaxyazuredevopskubernetesclient
         spec:
+            nodeSelector:
+                "beta.kubernetes.io/os": windows
             containers:
             - image: appservicesdockerregister.azurecr.io/galaxyazuredevopskubernetesclient:__Build.BuildId__
               imagePullPolicy: IfNotPresent
