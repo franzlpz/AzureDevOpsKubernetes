@@ -4,5 +4,5 @@ services:
   galaxy.azuredevops.kubernetes.client:
     image: ${DOCKER_REGISTRY-}galaxyazuredevopskubernetesclient
     build:
-      context: .\GalaxyAzureDevOpsKubernetes
+      context: .
       dockerfile: Galaxy.AzureDevOps.Kubernetes.Client\Dockerfile
